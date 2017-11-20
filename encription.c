@@ -42,10 +42,10 @@ long int gcdExtended(long int a, long int b, long int *x, long int *y)
     	*x = x2; *y = y2;
     	d=*y;
     	
-	if(d>phi)
-        	d=d%phi;
-    	if(d<0)
-        	d=d+phi;
+	if(d > phi)
+        	d = d % phi;
+    	if(d < 0)
+        	d= d + phi;
     	return d;
 }
 
